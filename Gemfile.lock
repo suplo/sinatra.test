@@ -1,3 +1,14 @@
+PATH
+  remote: ../../dev/wovnrb
+  specs:
+    wovnrb (1.1.0)
+      activesupport
+      addressable
+      lz4-ruby
+      nokogiri (~> 1.8.1)
+      nokogumbo (>= 1.4.0, < 2.0.0)
+      rack
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -9,8 +20,13 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     concurrent-ruby (1.0.5)
+    ffi (1.9.25)
     i18n (1.1.1)
       concurrent-ruby (~> 1.0)
+    listen (3.1.5)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
     lz4-ruby (0.3.3)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -23,6 +39,12 @@ GEM
     rack (2.0.5)
     rack-protection (2.0.4)
       rack
+    rb-fsevent (0.10.3)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
+    rerun (0.13.0)
+      listen (~> 3.0)
+    ruby_dep (1.5.0)
     sinatra (2.0.4)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -32,20 +54,14 @@ GEM
     tilt (2.0.8)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    wovnrb (1.1.0)
-      activesupport
-      addressable
-      lz4-ruby
-      nokogiri (~> 1.8.1)
-      nokogumbo (>= 1.4.0, < 2.0.0)
-      rack
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  rerun
   sinatra
-  wovnrb (= 1.1.0)
+  wovnrb (= 1.1.0)!
 
 BUNDLED WITH
    1.16.1

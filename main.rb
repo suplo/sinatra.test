@@ -1,11 +1,16 @@
 require 'rubygems'
 require 'sinatra'
+# require 'sinatra/reloader' if development?
 
 class MainApp < Sinatra::Base
+  # configure :development do
+    # register Sinatra::Reloader
+  # end
+
   set :public_folder, './pages'
 
   get '/' do
-    'Put this in your pipe & smoke it!'
+    'Hello @wovn'
   end
 
   get '/unified' do
