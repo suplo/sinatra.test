@@ -1,7 +1,7 @@
 PATH
   remote: ../../dev/wovnrb
   specs:
-    wovnrb (1.1.0)
+    wovnrb (1.2.0.pre.beta)
       activesupport
       addressable
       lz4-ruby
@@ -61,7 +61,7 @@ PLATFORMS
 DEPENDENCIES
   rerun
   sinatra
-  wovnrb (= 1.1.0)!
+  wovnrb!
 
 BUNDLED WITH
    1.16.1
