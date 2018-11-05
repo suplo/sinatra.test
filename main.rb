@@ -9,6 +9,10 @@ class MainApp < Sinatra::Base
 
   set :public_folder, './pages'
 
+  get '/hello' do
+    'Hello Dat. Have a nice day'
+  end
+
   get '/' do
     send_file './pages/index.html'
   end
