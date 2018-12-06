@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gem 'sinatra'
 
-gem 'wovnrb', :path => '~/dev/wovnrb'
-# gem 'wovnrb', '~> 2.0.0'
+# gem 'wovnrb', :path => '~/dev/wovnrb'
+gem 'wovnrb', '~> 2.0'
 
 gem 'rerun'
