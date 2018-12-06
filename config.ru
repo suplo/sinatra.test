@@ -2,8 +2,8 @@ require './main.rb'
 require 'wovnrb'
 
 use Wovnrb::Interceptor, {
-  # :project_token => 'SHAFdN', # unified_value
-  :project_token => 'RYmOcl', # fragmented_value
+  :project_token => 'SHAFdN', # unified_value
+  #:project_token => 'RYmOcl', # fragmented_value
   :wovn_dev_mode => true,
   :test_mode => true,
   :api_url => 'http://dev-wovn.io:4000/v0',

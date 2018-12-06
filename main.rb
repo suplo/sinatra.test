@@ -21,6 +21,18 @@ class MainApp < Sinatra::Base
     send_file './pages/unified.html'
   end
 
+  get '/has_html' do
+    send_file './pages/has_html.html'
+  end
+
+  get '/has_body' do
+    send_file './pages/has_body.html'
+  end
+
+  get '/has_head' do
+    send_file './pages/has_head.html'
+  end
+
   get '/ignore' do
     send_file './pages/ignore.html'
   end
@@ -31,5 +43,9 @@ class MainApp < Sinatra::Base
 
   get '/simple_ignore' do
     send_file './pages/simple_ignore.html'
+  end
+
+  get '/form' do
+    send_file './pages/form.html'
   end
 end
