@@ -48,4 +48,12 @@ class MainApp < Sinatra::Base
   get '/form' do
     send_file './pages/form.html'
   end
+
+  get '/lemon' do
+    send_file './pages/lemon.html'
+  end
+
+  get '/unicorn' do
+    send_file './pages/unicorn.html'
+  end
 end

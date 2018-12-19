@@ -1,0 +1,1 @@
+(function(d,c,f){var b=f.module;var e=f.lib;function a(g,h){if(!g||!h){return""}return g.replace(/{{[0-9]}}/g,function(i){return($.isArray(h)?h:[h])[i.match(/[0-9]/)[0]]||""})}b.exportsTo(e,{bindTemplate:a},true)})(window,window.document,window[$NAME_SPACE]||{});
