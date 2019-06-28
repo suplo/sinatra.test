@@ -7,7 +7,7 @@ class MainApp < Sinatra::Base
     # register Sinatra::Reloader
   # end
 
-  set :public_folder, './pages'
+  set :public_folder, './pages/'
 
   get '/hello' do
     'Hello Dat. Have a nice day'
@@ -55,5 +55,9 @@ class MainApp < Sinatra::Base
 
   get '/unicorn' do
     send_file './pages/unicorn.html'
+  end
+
+  get '/image' do
+    send_file './pages/image.html'
   end
 end

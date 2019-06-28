@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+    section {
+      border: 1px solid green;
+      padding: 8px;
+      display: inline-block;
+      width; 48%;
+    }
+    img {
+      width: 200px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <section>
+  <p>relative image
+    <img src="./neocities.png" alt="Relative image"/>
+  </p>
+  </section>
+  <section>
+    <p>relative path, only has translation in vietnamese, not japanese</p>
+    <img src="./bowser.png" alt="">
+  </section>
+  <section>
+    <p>absolute path /peach.jpg</p>
+    <img src="/peach.jpg" alt="">
+  </section>
+  <section>
+    <p>absolute path "http://sinatra.test/peach.jpg"</p>
+    <img src="http://sinatra.test/peach.jpg">
+  </section>
+  <section>
+    <p>absolute path, but only has translation in Vietnamese, not Japanese</p>
+    <img src="/daisy.png" alt="">
+  </section>
+  <section>
+  <p> absolute image with lang code `vi` in pathname
+    <img src="https://i.ytimg.com/vi/Byy2X__-E18/hqdefault.jpg" alt="dmm">
+  </p>
+  </section>
+</body>
+</html>
